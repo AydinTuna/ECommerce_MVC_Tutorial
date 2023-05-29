@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace ECommerce_MVC_Tutorial.Models
+namespace ECommerce.Models
 {
     public class Category
     {

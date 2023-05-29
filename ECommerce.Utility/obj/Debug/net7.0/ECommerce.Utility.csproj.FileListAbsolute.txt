@@ -1,0 +1,12 @@
+/Users/benbaho/Projects/ECommerce_MVC_Tutorial/ECommerce.Utility/bin/Debug/net7.0/ECommerce.Utility.deps.json
+/Users/benbaho/Projects/ECommerce_MVC_Tutorial/ECommerce.Utility/bin/Debug/net7.0/ECommerce.Utility.dll
+/Users/benbaho/Projects/ECommerce_MVC_Tutorial/ECommerce.Utility/bin/Debug/net7.0/ECommerce.Utility.pdb
+/Users/benbaho/Projects/ECommerce_MVC_Tutorial/ECommerce.Utility/obj/Debug/net7.0/ECommerce.Utility.csproj.AssemblyReference.cache
+/Users/benbaho/Projects/ECommerce_MVC_Tutorial/ECommerce.Utility/obj/Debug/net7.0/ECommerce.Utility.GeneratedMSBuildEditorConfig.editorconfig
+/Users/benbaho/Projects/ECommerce_MVC_Tutorial/ECommerce.Utility/obj/Debug/net7.0/ECommerce.Utility.AssemblyInfoInputs.cache
+/Users/benbaho/Projects/ECommerce_MVC_Tutorial/ECommerce.Utility/obj/Debug/net7.0/ECommerce.Utility.AssemblyInfo.cs
+/Users/benbaho/Projects/ECommerce_MVC_Tutorial/ECommerce.Utility/obj/Debug/net7.0/ECommerce.Utility.csproj.CoreCompileInputs.cache
+/Users/benbaho/Projects/ECommerce_MVC_Tutorial/ECommerce.Utility/obj/Debug/net7.0/ECommerce.Utility.dll
+/Users/benbaho/Projects/ECommerce_MVC_Tutorial/ECommerce.Utility/obj/Debug/net7.0/refint/ECommerce.Utility.dll
+/Users/benbaho/Projects/ECommerce_MVC_Tutorial/ECommerce.Utility/obj/Debug/net7.0/ECommerce.Utility.pdb
+/Users/benbaho/Projects/ECommerce_MVC_Tutorial/ECommerce.Utility/obj/Debug/net7.0/ref/ECommerce.Utility.dll
