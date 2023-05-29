@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using ECommerce.DataAccess.Data;
 using ECommerce.DataAccess.Repository.IRepository;
 using ECommerce.Models;
 using ECommerce.Models.ViewModels;
+using ECommerce.Utility;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
@@ -14,6 +17,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 namespace ECommerce_MVC_Tutorial.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = StaticDetails.Role_Admin)]
     public class ProductController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
@@ -118,7 +122,7 @@ namespace ECommerce_MVC_Tutorial.Areas.Admin.Controllers
 
         #region API CALLS
         [HttpGet]
-        public IActionResult GetAll(int id)
+        public IActionResult GetAll(int? id)
         {
             List<Product> objProductList = _unitOfWork.Product.GetAll(includeProperties: "Category").ToList();
             return Json(new { data = objProductList });

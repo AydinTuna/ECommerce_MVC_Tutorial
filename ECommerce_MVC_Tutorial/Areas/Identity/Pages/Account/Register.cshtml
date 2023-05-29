@@ -22,15 +22,49 @@
                 <label asp-for="Input.Password">Password</label>
                 <span asp-validation-for="Input.Password" class="text-red-600"></span>
             </div>
+
             <div class="form-floating mb-3">
                 <input asp-for="Input.ConfirmPassword" class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" autocomplete="new-password" aria-required="true" placeholder="password" />
                 <label asp-for="Input.ConfirmPassword">Confirm Password</label>
                 <span asp-validation-for="Input.ConfirmPassword" class="text-red-600"></span>
             </div>
             <div class="form-floating mb-3">
+                <input asp-for="Input.Name" class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" autocomplete="new-password" aria-required="true" placeholder="password" />
+                <label asp-for="Input.Name">Name</label>
+                <span asp-validation-for="Input.Name" class="text-red-600"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.StreetAddress" class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" autocomplete="new-password" aria-required="true" placeholder="password" />
+                <label asp-for="Input.StreetAddress">Street Address</label>
+                <span asp-validation-for="Input.StreetAddress" class="text-red-600"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.City" class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" autocomplete="new-password" aria-required="true" placeholder="password" />
+                <label asp-for="Input.City">City</label>
+                <span asp-validation-for="Input.City" class="text-red-600"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.State" class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" autocomplete="new-password" aria-required="true" placeholder="password" />
+                <label asp-for="Input.State">State</label>
+                <span asp-validation-for="Input.State" class="text-red-600"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.PostalCode" class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" autocomplete="new-password" aria-required="true" placeholder="password" />
+                <label asp-for="Input.PostalCode">Postal Code</label>
+                <span asp-validation-for="Input.PostalCode" class="text-red-600"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.PhoneNumber" class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" autocomplete="new-password" aria-required="true" placeholder="password" />
+                <label asp-for="Input.PhoneNumber">Phone Number</label>
+                <span asp-validation-for="Input.PhoneNumber" class="text-red-600"></span>
+            </div>
+
+
+            <div class="form-floating mb-3">
                 <select asp-for="Input.Role" asp-items="@Model.Input.RoleList" id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                 </select>
             </div>
+
             <button id="registerSubmit" type="submit" class="w-full inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded  no-underline py-3 px-4 leading-tight text-xl bg-blue-600 text-white hover:bg-blue-600">Register</button>
         </form>
     </div>

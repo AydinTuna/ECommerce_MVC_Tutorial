@@ -21,12 +21,9 @@
 		<PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.5" />
 	</ItemGroup>
 	<ItemGroup>
-		<None Remove="Views\Category\" />
 		<None Remove="Views\Category %28copy%29\" />
 	</ItemGroup>
 	<ItemGroup>
-		<Folder Include="Views\Category\" />
-		<Folder Include="Views\Product\" />
 		<Folder Include="wwwroot\images\" />
 		<Folder Include="wwwroot\images\product\" />
 	</ItemGroup>
@@ -51,6 +48,11 @@
 	<ItemGroup>
 		<Content Remove="wwwroot\images\" />
 		<Content Remove="wwwroot\images\product\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Content Update="wwwroot\js\product.js">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
 	</ItemGroup>
 	<Target Name="Tailwind" BeforeTargets="Build">
 		<Exec Command="npm run css:build" />

@@ -6,12 +6,15 @@ using ECommerce.DataAccess.Data;
 using ECommerce.DataAccess.Repository.IRepository;
 using ECommerce.Models;
 using Microsoft.AspNetCore.Mvc;
+using ECommerce.Utility;
+using Microsoft.AspNetCore.Authorization;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace ECommerce_MVC_Tutorial.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = StaticDetails.Role_Admin)]
     public class CategoryController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;

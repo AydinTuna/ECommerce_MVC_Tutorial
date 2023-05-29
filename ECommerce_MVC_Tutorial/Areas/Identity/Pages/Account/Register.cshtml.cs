@@ -10,6 +10,7 @@ using System.Text;
 using System.Text.Encodings.Web;
 using System.Threading;
 using System.Threading.Tasks;
+using ECommerce.DataAccess.Repository.IRepository;
 using ECommerce.Models;
 using ECommerce.Utility;
 using Microsoft.AspNetCore.Authentication;
@@ -22,6 +23,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
+
 
 namespace ECommerce_MVC_Tutorial.Areas.Identity.Pages.Account
 {
@@ -108,6 +110,17 @@ namespace ECommerce_MVC_Tutorial.Areas.Identity.Pages.Account
             public string? Role { get; set; }
             [ValidateNever]
             public IEnumerable<SelectListItem> RoleList { get; set; }
+
+            [Required]
+            public string Name { get; set; }
+            public string? StreetAddress { get; set; }
+            public string? City { get; set; }
+            public string? State { get; set; }
+            public string? PostalCode { get; set; }
+            public string? PhoneNumber { get; set; }
+            public int? CompanyId { get; set; }
+            [ValidateNever]
+            public IEnumerable<SelectListItem> CompanyList { get; set; }
         }
 
 
@@ -144,6 +157,13 @@ namespace ECommerce_MVC_Tutorial.Areas.Identity.Pages.Account
 
                 await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
+                user.StreetAddress = Input.StreetAddress;
+                user.City = Input.City;
+                user.Name = Input.Name;
+                user.State = Input.State;
+                user.PostalCode = Input.PostalCode;
+                user.PhoneNumber = Input.PhoneNumber;
+
                 var result = await _userManager.CreateAsync(user, Input.Password);
 
                 if (result.Succeeded)
